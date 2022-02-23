@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Dosis:wght@800&family=Montserrat:wght@500&family=Roboto:wght@300&display=swap");
+:root {
+  --gray: rgba(119, 119, 119, 1);
+  --dark-green: rgba(2, 168, 65, 0.753);
+  --green: rgb(20, 185, 56);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  padding: 1rem;
+  margin-top: -0.001rem;
+  font-size: 48px;
+  letter-spacing: 0.05rem;
+  color: rgb(13, 17, 17);
+  background-color: var(--green);
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  left: 0;
+  margin-top: 1.5rem;
+  margin-left: -1rem;
+}
+
+.socials button,
+.links button {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  border: 0.5px rgba(193, 252, 193, 0.658) solid;
+  transition: 200ms transform ease-in-out;
+}
+
+.body {
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 900px;
+}
+
+.body {
+  box-shadow: 5px 5px 10px 1px var(--dark-green);
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Akaya Telivigala", cursive;
+}
+
+.body-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 0 4rem 4rem 2rem;
+}
+
+.body-row img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100rem;
+}
+
+.body-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.body-content p,
+.project-content p {
+  font-family: "Roboto", sans-serif;
+  max-width: 500px;
+  font-size: 13px;
+  font-weight: 300;
+  word-spacing: 0.025rem;
+  line-height: 1.75rem;
+  color: var(--gray);
+  justify-content: center;
+}
+
+.project-btn {
+  position: absolute;
+  right: 0;
+  margin-right: -0.75rem;
+}
+
+.project-btn button {
+  padding: 1rem;
+  box-shadow: 5px 5px 10px 1px var(--dark-green);
+  border-radius: 0.5rem;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  transition: 200ms transform ease-in-out;
+}
+
+.project-btn p {
+  margin: 0 -5px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-weight: 700;
+}
+
+.socials button:hover,
+.project-btn button:hover,
+.links button:hover {
+  transform: scale(1.025);
+  border: 1px rgb(126, 231, 126) solid;
+  box-shadow: 1px 2px 5px 1px var(--dark-green);
+}
+
+/*project*/
+.project-title {
+  padding: 1rem 20rem;
+  border-top: 1px rgb(134, 134, 134) solid;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 1rem;
+  gap: 2rem;
+  width: 900px;
+}
+
+.project-grid {
+  display: block;
+  text-align: center;
+  border-radius: 2rem;
+  padding: 1rem 0;
+}
+
+.project-grid:hover {
+  background-color: rgb(199, 252, 196);
+}
+
+.project-grid h3 {
+  background-color: rgba(85, 235, 85, 0.671);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 1rem;
+  margin-top: -1rem;
+}
+
+.project-grid button a,
+.project-btn button a {
+  text-decoration: none;
+  color: black;
+}
+
+.links button {
+  margin: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .body,
+  .project {
+    width: 750px;
+  }
+
+  .project-title {
+    padding: 1rem 15rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .body,
+  .project {
+    width: 700px;
+  }
+
+  .project-title {
+    padding: 1rem 15rem;
+  }
+
+  .body-content p {
+    word-spacing: 0.025rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .body,
+  .project {
+    width: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  .body,
+  .project {
+    width: 500px;
+  }
+
+  .body,
+  .body-row {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .body-content {
+    text-align: center;
+  }
+
+  .project-title {
+    padding: 1rem 10rem;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    padding: 1rem;
+  }
+  .body,
+  .project {
+    width: 350px;
+  }
+
+  .project-title {
+    padding: 1rem 5rem;
+  }
+}
