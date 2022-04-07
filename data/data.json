@@ -2,26 +2,22 @@
   "data": [
     {
       "name": "Chetan",
-      "bio": "Hi, I am Chetan",
-      "profilePicture": "none yet",
-      "socials": [
-        {
-          "socialPlatformName": "Twitter",
-          "socialProfileURL": "https://twitter.com/0rGaan1c"
-        },
-        {
-          "socialPlatformName": "GitHub",
-          "socialProfileURL": "https://github.com/0rGaan1c"
-        }
-      ],
+      "bio": "Hi, I am Chetan.",
+      "profilePicture": "https://pbs.twimg.com/media/D9jPRJgXsAErepW.jpg",
+      "socials": {
+        "twitter": "https://twitter.com/0rGaan1c",
+        "github": "https://github.com/0rGaan1c"
+      },
       "projects": [
         {
           "projectName": "Instagram-Clone",
+          "projectDescription": "A simple Instagram-Clone made using React and Firebase.",
           "projectCodeURL": "https://github.com/0rGaan1c/instagram-clone",
           "projectDemoURL": "https://instagram-clone-b7e9f.web.app/"
         },
         {
           "projectName": "Shopping-Cart",
+          "projectDescription": "A Shopping-Cart made using useContext() and useReducer() hooks.",
           "projectCodeURL": "https://github.com/0rGaan1c/shoppingcart-games",
           "projectDemoURL": "https://shoppingcart-games-five.vercel.app/"
         }
